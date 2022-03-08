@@ -200,7 +200,7 @@ $(document).ready(function () {
             address: 'ITC Fortune Park Hotel, Kolkata',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Amit Roy at +91 9876543210."
+            description: "We can't wait to see you on our big day. For any queries or issues contact Mr. Amit Roy at +91 9435021804 or +91 7086018971."
         }
     });
 
@@ -221,12 +221,8 @@ $(document).ready(function () {
             $.post('https://script.google.com/macros/s/AKfycbzUqz44wOat0DiGjRV1gUnRf4HRqlRARWggjvHKWvqniP7eVDG-/exec', data)
                 .done(function (data) {
                     console.log(data);
-                    if (data.result === "error") {
-                        $('#alert-wrapper').html(alert_markup('danger', data.message));
-                    } else {
-                        $('#alert-wrapper').html('');
-                        $('#rsvp-modal').modal('show');
-                    }
+                    $('#alert-wrapper').html('');
+                    $('#rsvp-modal').modal('show');
                 })
                 .fail(function (data) {
                     console.log(data);
@@ -241,21 +237,21 @@ $(document).ready(function () {
 
 // Google map
 function initMap() {
-    var location = {lat: 22.5932759, lng: 88.27027720000001};
+    var itc_kol = {lat: 39.213358, lng: -76.702904};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
-        center: location,
+        center: itc_kol,
         scrollwheel: false
     });
 
     var marker = new google.maps.Marker({
-        position: location,
+        position: itc_kol,
         map: map
     });
 }
 
 function initBBSRMap() {
-    var la_fiesta = {lat: 20.305826, lng: 85.85480189999998};
+    var la_fiesta = {lat: 39.213358, lng: -76.702904};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: la_fiesta,
