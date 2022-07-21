@@ -162,7 +162,7 @@
 <img class="center-block"
      src="img/sadie.jpg"
      width="456"
-     height="274" />
+     height="400" />
 <script>
 function myFunction() {
   // document.getElementById("demo").innerHTML = "Hello World";
@@ -415,6 +415,7 @@ function BBandB() {
                 <p>A block of rooms have been reserved at the following hotel at a special daily rate of $135 for the King Bed and $139 for 2 Queen Beds.
                     Breakfast buffet included.
                     <br />
+                    Please make your reservation by September 15th by clicking on <a href="https://www.hilton.com/en/attend-my-event/bwiaphf-parkar-2f2600a0-decb-45e2-b8ac-c6d05ff46953/">this link</a> OR by calling the hotel and reference “Park Karunanidhi Wedding”
 Please make your reservation by September 15th and reference <b>"Park Karunanidhi Wedding"</b>.
  <br /><br />
 <a href="https://www.hilton.com/en/attend-my-event/bwiaphf-parkar-2f2600a0-decb-45e2-b8ac-c6d05ff46953/">Hilton Baltimore BWI Airport</a> <br />
@@ -455,18 +456,11 @@ Please make your reservation by September 15th and reference <b>"Park Karunanidh
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <h3>What are you waiting for?</h3>
-                <p>We would greatly appreciate if you could RSVP by September 5th.</p>
+                <p>We would greatly appreciate if you could RSVP by September 5th. Although we love your children, we regretfully cannot accommodate them at the venue due to restricted numbers. Thank you for understanding!</p>
                 <form id="gform" class="rsvp-form"
                       action="https://script.google.com/macros/s/AKfycbxj05U1VwM4FGFqCS5bM8tA1sJPTw0kUABgekacREdAOMr4PAZp/exec"
                       method="POST">
                     <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Your email"
-                                                                     required>
-                            </div>
-                        </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-user"></i><input name="name" class=""
@@ -474,16 +468,24 @@ Please make your reservation by September 15th and reference <b>"Park Karunanidh
                                                                  required>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="# of guests" class="" min="1"
-                                                                  max="4"
-                                                                  placeholder="Number of Guests"
-                                                                  required>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-users"></i><input type="number" name="# of guests" class="" min="1"
+                                                                      max="4"
+                                                                      placeholder="Number of Guests"
+                                                                      required>
+                                </div>
                             </div>
+
+                    </div>
+                        <div class="col-md-6 col-sm-6">
+                        <div class="form-input-group">
+                            <i class="fa fa-envelope"></i><input type="dietary" name="dietary restrictions/allergies" class=""
+                                                                 placeholder="Dietary restrictions/Allergies"
+                                                                 required>
                         </div>
+                    </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-phone"></i><input type="number" name="Phone Number" id="invite_code"
